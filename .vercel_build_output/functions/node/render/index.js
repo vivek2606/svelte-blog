@@ -2447,9 +2447,9 @@ function init(settings = default_settings) {
     amp: false,
     dev: false,
     entry: {
-      file: assets + "/_app/start-4c801ed8.js",
+      file: assets + "/_app/start-0d5d934c.js",
       css: [assets + "/_app/assets/start-d5b4de3e.css"],
-      js: [assets + "/_app/start-4c801ed8.js", assets + "/_app/chunks/vendor-d60add4d.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
+      js: [assets + "/_app/start-0d5d934c.js", assets + "/_app/chunks/vendor-d60add4d.js", assets + "/_app/chunks/preload-helper-ec9aa979.js"]
     },
     fetched: void 0,
     floc: false,
@@ -2568,7 +2568,7 @@ var module_lookup = {
     return blog;
   })
 };
-var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-1dd570f5.js", "css": ["assets/pages/__layout.svelte-b3cdecc4.css"], "js": ["pages/__layout.svelte-1dd570f5.js", "chunks/vendor-d60add4d.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-6a7b2fd8.js", "css": [], "js": ["error.svelte-6a7b2fd8.js", "chunks/vendor-d60add4d.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a7097659.js", "css": [], "js": ["pages/index.svelte-a7097659.js", "chunks/vendor-d60add4d.js", "chunks/env-a13806e5.js"], "styles": [] }, "src/routes/about.svelte": { "entry": "pages/about.svelte-ae9bcb8f.js", "css": [], "js": ["pages/about.svelte-ae9bcb8f.js", "chunks/vendor-d60add4d.js", "chunks/env-a13806e5.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-42cc3846.js", "css": [], "js": ["pages/blog/index.svelte-42cc3846.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-d60add4d.js"], "styles": [] }, "src/routes/blog/second-post.md": { "entry": "pages/blog/second-post.md-352876c1.js", "css": [], "js": ["pages/blog/second-post.md-352876c1.js", "chunks/vendor-d60add4d.js", "chunks/_layout-4a017f8c.js"], "styles": [] }, "src/routes/blog/first-post.md": { "entry": "pages/blog/first-post.md-c008dd61.js", "css": [], "js": ["pages/blog/first-post.md-c008dd61.js", "chunks/vendor-d60add4d.js", "chunks/_layout-4a017f8c.js"], "styles": [] }, "src/routes/blog/third-post.svx": { "entry": "pages/blog/third-post.svx-fb8b15b0.js", "css": [], "js": ["pages/blog/third-post.svx-fb8b15b0.js", "chunks/vendor-d60add4d.js", "chunks/_layout-4a017f8c.js"], "styles": [] }, "src/routes/blog.svelte": { "entry": "pages/blog.svelte-3590a19c.js", "css": [], "js": ["pages/blog.svelte-3590a19c.js", "chunks/vendor-d60add4d.js"], "styles": [] } };
+var metadata_lookup = { "src/routes/__layout.svelte": { "entry": "pages/__layout.svelte-ad9ad52b.js", "css": ["assets/pages/__layout.svelte-b3cdecc4.css"], "js": ["pages/__layout.svelte-ad9ad52b.js", "chunks/vendor-d60add4d.js"], "styles": [] }, ".svelte-kit/build/components/error.svelte": { "entry": "error.svelte-6a7b2fd8.js", "css": [], "js": ["error.svelte-6a7b2fd8.js", "chunks/vendor-d60add4d.js"], "styles": [] }, "src/routes/index.svelte": { "entry": "pages/index.svelte-a7097659.js", "css": [], "js": ["pages/index.svelte-a7097659.js", "chunks/vendor-d60add4d.js", "chunks/env-a13806e5.js"], "styles": [] }, "src/routes/about.svelte": { "entry": "pages/about.svelte-ae9bcb8f.js", "css": [], "js": ["pages/about.svelte-ae9bcb8f.js", "chunks/vendor-d60add4d.js", "chunks/env-a13806e5.js"], "styles": [] }, "src/routes/blog/index.svelte": { "entry": "pages/blog/index.svelte-42cc3846.js", "css": [], "js": ["pages/blog/index.svelte-42cc3846.js", "chunks/preload-helper-ec9aa979.js", "chunks/vendor-d60add4d.js"], "styles": [] }, "src/routes/blog/second-post.md": { "entry": "pages/blog/second-post.md-352876c1.js", "css": [], "js": ["pages/blog/second-post.md-352876c1.js", "chunks/vendor-d60add4d.js", "chunks/_layout-4a017f8c.js"], "styles": [] }, "src/routes/blog/first-post.md": { "entry": "pages/blog/first-post.md-c008dd61.js", "css": [], "js": ["pages/blog/first-post.md-c008dd61.js", "chunks/vendor-d60add4d.js", "chunks/_layout-4a017f8c.js"], "styles": [] }, "src/routes/blog/third-post.svx": { "entry": "pages/blog/third-post.svx-fb8b15b0.js", "css": [], "js": ["pages/blog/third-post.svx-fb8b15b0.js", "chunks/vendor-d60add4d.js", "chunks/_layout-4a017f8c.js"], "styles": [] }, "src/routes/blog.svelte": { "entry": "pages/blog.svelte-3590a19c.js", "css": [], "js": ["pages/blog.svelte-3590a19c.js", "chunks/vendor-d60add4d.js"], "styles": [] } };
 async function load_component(file) {
   const { entry, css: css2, js, styles } = metadata_lookup[file];
   return {
@@ -2585,8 +2585,6 @@ function render(request, {
   const host = request.headers["host"];
   return respond({ ...request, host }, options, { prerender: prerender2 });
 }
-var browser = false;
-var dev = false;
 var getStores = () => {
   const stores = getContext("__svelte__");
   return {
@@ -2678,6 +2676,8 @@ var error2 = /* @__PURE__ */ Object.freeze({
   "default": Error$1,
   load: load$1
 });
+var browser = false;
+var dev = false;
 var hydrate$1 = dev;
 var router$1 = browser;
 var prerender$1 = true;

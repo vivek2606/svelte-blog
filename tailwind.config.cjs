@@ -1,6 +1,6 @@
 module.exports = {
 	mode: 'jit',
-	purge: ['./src/**/*.svelte', './src/routes/blog/*.md', './src/routes/blog/*.svelte'],
+	purge: ['./src/**/*.svelte', './src/**/**/*.md', './src/**/**/*.svelte'],
 	theme: {
 		extend: {
 			fontFamily: {
